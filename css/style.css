@@ -16,7 +16,6 @@ body {
 
 main {
     min-height: 89.9vh;
-    margin: 5px;
 }
 
 
@@ -72,15 +71,13 @@ a.back-to-home {
 /* BARRA DE NAVEGACION */
 
 .contenedor-navbar {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 1);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     transition: all 200ms;
     position: fixed;
-    top: 0;
     z-index: 3;
 }
 
