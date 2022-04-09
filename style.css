@@ -425,10 +425,6 @@ textarea {
     opacity: 0.9;
 }
 
-#navbar {
-    width: 400px;
-}
-
 #contenedor-navbar {
     width: 100%;
     position: fixed;
