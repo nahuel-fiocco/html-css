@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
 /* BODY Y MAIN */
 
 body {
@@ -120,6 +127,7 @@ form {
     display: flex;
     justify-content: space-between;
     gap: 1vh;
+    outline: none;
 }
 
 .sumbit {
@@ -127,6 +135,7 @@ form {
     background-color: white;
     width: 40px;
     height: 40px;
+    outline: none;
 }
 
 .contenedor-instagram {
@@ -214,7 +223,7 @@ form {
     display: inline-block;
     position: fixed;
     z-index: 3;
-    right: 60px;
+    right: 70px;
     bottom: 80px;
     width: 1px;
     height: 1px;
@@ -226,8 +235,8 @@ form {
     position: relative;
     display: flex;
     justify-content: space-around;
-    width: 44px;
-    height: 28px;
+    width: 60px;
+    height: 34px;
     background-color: #ccc;
     border-radius: 20px;
     transition: all 200ms;
@@ -236,10 +245,10 @@ form {
 .switch i::after {
     content: "";
     position: absolute;
-    left: 2px;
+    left: 4px;
     top: 3px;
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
@@ -252,20 +261,18 @@ form {
 
 .switch input:checked+i {
     background-color: #4BD763;
-    /* background-color: #515151; */
+    /* background-color: #515151;*/
 }
 
 .switch input:checked+i::after {
-    transform: translate(17px);
+    transform: translate(24px);
 }
 
 .icono-switch {
-    position: relative;
-    padding: 2px;
-    top: 3px;
-    width: 2.5vh;
-    height: 2.5vh;
-    transition: all 200ms;
+    margin-top: 6px;
+    padding: 1px;
+    width: 22px;
+    height: 22px;
 }
 
 
@@ -289,6 +296,7 @@ form {
 
 .gif-gracias {
     width: 20%;
+    border-radius: 5px;
 }
 
 .contenedor-back-site {
