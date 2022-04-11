@@ -272,8 +272,21 @@ form {
     border-radius: 1vh;
 }
 
+.contenedor-gif {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .gif-gracias {
-    width: 30%;
+    width: 31%;
+}
+
+.contenedor-back-site {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .col-md-4 {
