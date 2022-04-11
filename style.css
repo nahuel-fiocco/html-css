@@ -81,7 +81,7 @@ footer {
     padding: 1px;
     font-size: 14px;
     transition: all 200ms;
-    margin-top: 3vh;
+    margin-top: 2vh;
     z-index: 1;
 }
 
@@ -262,26 +262,29 @@ form {
 
 /* IMAGENES */
 
+.contenedor-image-nosotros {
+    display: flex;
+    justify-content: center;
+}
+
 .image-nosotros {
     width: 50vh;
-    border-radius: 2vh;
+    border-radius: 1vh;
 }
 
 .gif-gracias {
-    width: 70%;
+    width: 30%;
 }
 
 .col-md-4 {
-    border: solid 10px white;
-    padding-top: 10px;
-    background-color: rgb(240, 240, 240);
-    border-radius: 15px;
+    padding: 10px;
 }
 
 .imgfoot {
     width: 100%;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 200ms;
 }

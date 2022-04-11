@@ -7,94 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turisteando BA: Fooding</title>
     <link rel="icon" href="./media/android-chrome-512x512.png">
+    <!--CSS PROPIO-->
     <link rel="stylesheet" href="style.css">
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--JS PROPIO-->
     <script src="js.js"></script>
+    <!--JS BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
-    <div class="contenedor-navbar">
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="turistear.html">Turistear</a></li>
-            <li><a href="fooding.html">Fooding</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <div id="contenedor-navbar" class="contenedor-navbar d-flex justify-content-center">
+        <ul class="nav nav-pills justify-content-between">
+            <li class="nav-item ">
+                <a class="nav-link text-white small link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white small link" href="turistear.html">Turistear</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white small link" href="fooding.html">Fooding</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white small link" href="nosotros.html">Nosotros</a>
+            </li>
         </ul>
-        <label class="switch">
-            <input onclick="toggleDarkMode()" type="checkbox">
-            <i>
-                <img class="icono-switch" src="./media/sun_black.png">
-                <img class="icono-switch" src="./media/moon_black.png">
-            </i>
-        </label>
     </div>
-    <main>
-        <h1>Fooding,</h1>
-        <p>Morfar, degustar y/o probar platos tipicos de diversos luagares del mundo 🍴, ejemplos...</p>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/Y3PvWpmn5KWun73u6"><img class="image" alt="per tutti abasto" src="./media/per tutti zenital.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/Y3PvWpmn5KWun73u6">Per Tutti, Abasto</a>
+    <label class="switch">
+            <input onclick="toggleDarkMode() " type="checkbox">
+            <i>
+                <img class="icono-switch" src="./media/sun_black.png ">
+                <img class="icono-switch" src="./media/moon_black.png ">
+            </i>
+    </label>
+    <main class="main">
+        <h2>Fooding,</h2>
+        <p class="texto-inicial">Morfar, degustar y/o probar platos tipicos de diversos luagares del mundo 🍴, ejemplos...</p>
+        <!-- NUEVA -->
+        <div class="container-fluid">
+            <div class="row fluid">
+                <div class="col-md-4 fluid">
+                    <a class="link" target="blank" href="https://goo.gl/maps/Y3PvWpmn5KWun73u6"><img class="img-fluid rounded" alt="alchemy" src="./media/per tutti zenital.jpg"><span class="imgfoot">Per Tutti, Abasto</span></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="link" target="blank " href="https://goo.gl/maps/BEt7GoZ3UzELX6C29"><img class="img-fluid rounded " alt="mercat villa crespo " src="./media/nerea latte y croassaint.jpg "><span class="imgfoot">Nerea Cafe, Caballito</span></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="link" target="blank " href="https://goo.gl/maps/QJZJ3yeFBWxcvBSs8"><img class="img-fluid rounded " alt="directorio flores " src="./media/london city cafe con leche.jpg ">
+                        <span class="imgfoot">London City, Monserrat</span></a>
+                </div>
             </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/BEt7GoZ3UzELX6C29"><img class="image" alt="nerea caballito" src="./media/nerea latte y croassaint.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/BEt7GoZ3UzELX6C29">Nerea Cafe, Caballito</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="link" target="blank " href="https://g.page/antaresnaon?share"><img class="img-fluid rounded" alt="barrio ingles" src="./media/antares cena.jpg "><span class="imgfoot">Antares, Mataderos</span></a>
+                </div>
+                <div class="col-md-4 ">
+                    <a class="link" target="blank " href="https://goo.gl/maps/VNaWHB4vAxiV6M9i6"><img class="img-fluid rounded " alt="puerto madero " src="./media/tacobox dvt.jpg "><span class="imgfoot">Tacobox, Devoto</span></a>
+                </div>
+                <div class="col-md-4 ">
+                    <a class="link" target="blank " href="https://goo.gl/maps/3kkprxmUJZN4QQF59"><img class="img-fluid rounded " alt="dandy palermo " src="./media/reggina malfatti.jpg "><span class="imgfoot">Reggina, Flores</span></a>
+                </div>
             </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/QJZJ3yeFBWxcvBSs8"><img class="image" alt="london city cafe" src="./media/london city cafe con leche.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/QJZJ3yeFBWxcvBSs8">London City, Monserrat</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://g.page/antaresnaon?share"><img class="image" alt="antares naon" src="./media/antares cena.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://g.page/antaresnaon?share">Antares Naon, Mataderos</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/VNaWHB4vAxiV6M9i6"><img class="image" alt="tacobox devoto" src="./media/tacobox dvt.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/VNaWHB4vAxiV6M9i6">Tacobox, Devoto</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/3kkprxmUJZN4QQF59"><img class="image" alt="reggina almuerzo" src="./media/reggina malfatti.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/3kkprxmUJZN4QQF59">Reggina, Flores</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/3kkprxmUJZN4QQF59"><img class="image" alt="reggina merienda" src="./media/reggina merienda.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/3kkprxmUJZN4QQF59">Reggina, Flores</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/rxdHsMzRzD6TBpCT8"><img class="image" alt="jerome picada" src="./media/jerome picada.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/rxdHsMzRzD6TBpCT8">Jerome Bar, Palermo</a>
-            </div>
-        </div>
-        <div class="contenedor-fotos">
-            <a class="nounderline" target="blank" href="https://goo.gl/maps/nuiN4cbTREkdrQYT9"><img class="image" alt="kenzai sushi canning" src="./media/kenzai sushi canning.jpg"></a>
-            <div class="middle">
-                <a class="texto-imagen" target="blank" href="https://goo.gl/maps/nuiN4cbTREkdrQYT9">Kenzai Sushi, Canning</a>
+            <div class="row ">
+                <div class="col-md-4">
+                    <a class="link" target="blank " href="https://goo.gl/maps/3kkprxmUJZN4QQF59"><img class="img-fluid rounded " alt="lowells tigre " src="./media/reggina merienda.jpg "><span class="imgfoot">Reggina, Flores</span></a>
+                </div>
+                <div class="col-md-4 ">
+                    <a class="link" target="blank " href="https://goo.gl/maps/rxdHsMzRzD6TBpCT8"><img class="img-fluid rounded " alt="obelisco " src="./media/jerome picada.jpg "><span class="imgfoot">Jerome Bar, Palermo</span></a>
+                </div>
+                <div class="col-md-4 ">
+                    <a class="link" target="blank " href="https://goo.gl/maps/nuiN4cbTREkdrQYT9"><img class="img-fluid rounded " alt="laguna san vicente " src="./media/kenzai sushi canning.jpg "><span class="imgfoot">Kenzai Sushi, Canning</span></a>
+                </div>
             </div>
         </div>
     </main>
-    <section class="contenedor-footer">
-        <footer>
-            <p class="parrafo-footer"><img class="icono-footer" alt="instagram" src="./media/instagram-logo.png">
-                <a target="blank" href="https://www.instagram.com/nahuelfiocco/"> Nahu</a> &
-                <a target="blank" href="https://www.instagram.com/micka_sofia/">Mica</a>
-            </p>
-        </footer>
-    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col contenedor-formulario">
+                    <h3 class="text-white">Tu opinion es muy importante!</h3>
+                    <form name="sugerencias" autocomplete="on" action="sent_data.html" method="post">
+                        <textarea class="sugerencias" required="" id="text" placeholder="Dejanos tus sugerencias!"></textarea>
+                        <div class="btn-group">
+                            <button class="sumbit" type="submit">🚀</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col contenedor-instagram">
+                    <h3 class="text-white">Seguinos en Instagram!</h3>
+                    <p class="texto-footer">
+                        <img class="icono-instagram" alt="instagram" src="./media/instagram-logo.png">&nbsp;
+                        <a class="link-light" target="blank" href="https://www.instagram.com/nahuelfiocco/">Nahu</a>&nbsp;&&nbsp;
+                        <a class="link-light" target="blank" href="https://www.instagram.com/micka_sofia/">Mica</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-legal">
+            <p class="text-white texto-legal">© 2022 | Todos los derechos reservados.&nbsp&nbsp<span id="cohetito-legal" class="texto-legal">🚀</span></p>
+        </div>
+    </footer>
 
+    </main>
 </body>
 
 </html>
