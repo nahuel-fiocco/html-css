@@ -1,9 +1,13 @@
+/* INICIALIZACION */
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+// DEFINICION DE VARIABLES
+$transicion: 200ms;
 
 /* BODY Y MAIN */
 
@@ -15,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    transition: all 200ms;
+    transition: $transicion;
     overflow: auto;
     z-index: 0;
 }
@@ -56,7 +60,7 @@ p {
     position: fixed;
     z-index: 1;
     top: 0;
-    transition: all 200ms;
+    transition: $transicion;
 }
 
 
@@ -65,19 +69,26 @@ p {
 .link {
     color: black;
     text-decoration: none;
-}
-
-.link:hover {
-    color: black;
-    text-decoration: underline;
+    &:hover {
+        color: black;
+        text-decoration: underline;
+    }
 }
 
 .link-light {
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-.link-light:hover {
-    text-decoration: underline;
+.imgfoot {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transicion;
 }
 
 
@@ -91,7 +102,7 @@ footer {
     width: 100%;
     padding: 1px;
     font-size: 14px;
-    transition: all 200ms;
+    transition: $transicion;
     margin-top: 2vh;
     z-index: 1;
 }
@@ -169,12 +180,11 @@ form {
 
 #cohetito-legal {
     transition: all 500ms;
-}
-
-#cohetito-legal:hover {
-    transition: all 500ms;
-    transform: rotate(720deg);
-    cursor: default;
+    &:hover {
+        transition: all 500ms;
+        transform: rotate(720deg);
+        cursor: default;
+    }
 }
 
 
@@ -183,36 +193,46 @@ form {
 .dark-mode {
     background-color: black;
     color: white;
-    transition: all 200ms;
+    transition: $transicion;
+    &.gif-gracias {
+        opacity: 0.9;
+    }
+    &.img-fluid {
+        opacity: 0.9;
+        transition: $transicion;
+    }
+    &.image-nosotros {
+        opacity: 0.8;
+        transition: $transicion;
+    }
+    &a.back-to-home {
+        color: white;
+        transition: $transicion;
+    }
+    &.link {
+        color: white;
+        text-decoration: none;
+        transition: $transicion;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+            transition: $transicion;
+        }
+    }
+    & .img-foot {
+        color: white;
+        transition: $transicion;
+    }
 }
 
-.dark-mode .gif-gracias {
-    opacity: 0.9;
-}
-
-.dark-mode .img-fluid {
-    opacity: 0.9;
-    transition: all 200ms;
-}
-
-.dark-mode .image-nosotros {
-    opacity: 0.8;
-    transition: all 200ms;
-}
-
-.dark-mode a.back-to-home {
+.dark-mode .imgfoot {
     color: white;
-    transition: all 200ms;
-}
-
-.dark-mode .link {
-    color: white;
-    text-decoration: none;
-}
-
-.dark-mode .link:hover {
-    color: white;
-    text-decoration: underline;
+    transition: $transicion;
+    &:hover {
+        color: white;
+        text-decoration: underline;
+        transition: $transicion;
+    }
 }
 
 
@@ -229,7 +249,7 @@ form {
     width: 1px;
     height: 1px;
     padding: 0px;
-    transition: all 200ms;
+    transition: $transicion;
 }
 
 .switch i {
@@ -240,7 +260,7 @@ form {
     height: 34px;
     background-color: #ccc;
     border-radius: 20px;
-    transition: all 200ms;
+    transition: $transicion;
 }
 
 .switch i::after {
@@ -253,7 +273,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
-    transition: all 200ms;
+    transition: $transicion;
 }
 
 .switch input {
@@ -329,15 +349,6 @@ form {
 
 .col-md-4 {
     padding: 10px;
-}
-
-.imgfoot {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 200ms;
 }
 
 .imagenes {
