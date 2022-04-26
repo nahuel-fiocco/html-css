@@ -6,14 +6,20 @@
     border: 0;
 }
 
-// DEFINICION DE VARIABLES
+
+/* DEFINICION DE VARIABLES */
+
 $transicion: 200ms;
+
+/* COLOR PALETTE */
+
+$colores: ( negro: black, blanco: white, gris-oscuro:rgba(20, 20, 20, 0.9), gris-oscurito:rgba(20, 20, 20, 0.7), transparente: transparent, grisecito: #ccc, verde-ios:#4BD763, sombrita:10px 10px 15px 5px rgba(0, 0, 0, 0.3));
 
 /* BODY Y MAIN */
 
 body {
-    background-color: white;
-    color: black;
+    background-color: map-get($colores, blanco);
+    color: map-get($colores, negro);
     text-align: center;
     font-family: sans-serif;
     margin: 0;
@@ -51,7 +57,7 @@ p {
     width: 100%;
     position: fixed;
     top: 5px;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: map-get($colores, gris-oscuro);
     backdrop-filter: blur(5px);
     height: auto;
     display: flex;
@@ -61,6 +67,15 @@ p {
     z-index: 1;
     top: 0;
     transition: $transicion;
+}
+
+.nav-item {
+    transition: $transicion;
+    &:hover {
+        transform: scale(1.05);
+        text-decoration: underline;
+        transition: $transicion;
+    }
 }
 
 
@@ -75,7 +90,7 @@ p {
 
 .link {
     position: relative;
-    color: black;
+    color: map-get($colores, negro);
     text-decoration: none;
     overflow: hidden;
     transition: $transicion;
@@ -95,7 +110,7 @@ p {
     left: 10px;
     width: auto;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: map-get($colores, gris-oscurito);
     backdrop-filter: blur(2px);
     border-radius: 5px;
     padding: 5px;
@@ -111,7 +126,7 @@ p {
 /* FOOTER */
 
 footer {
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: map-get($colores, gris-oscuro);
     backdrop-filter: blur(5px);
     position: relative;
     bottom: 0px;
@@ -160,7 +175,7 @@ form {
 
 .sumbit {
     border-radius: 15px;
-    background-color: white;
+    background-color: map-get($colores, blanco);
     width: 40px;
     height: 40px;
     outline: none;
@@ -176,7 +191,7 @@ form {
 }
 
 .texto-footer {
-    color: white;
+    color: map-get($colores, blanco);
 }
 
 .icono-instagram {
@@ -206,8 +221,8 @@ form {
 /* DARK MODE */
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: map-get($colores, negro);
+    color: map-get($colores, blanco);
     transition: $transicion;
     .gif-gracias {
         opacity: 0.9;
@@ -219,13 +234,13 @@ form {
         opacity: 0.8;
     }
     a.back-to-home {
-        color: white;
+        color: map-get($colores, blanco);
     }
     .link {
-        color: white;
+        color: map-get($colores, blanco);
         text-decoration: none;
         &:hover {
-            color: white;
+            color: map-get($colores, blanco);
             text-decoration: underline;
         }
     }
@@ -236,7 +251,7 @@ form {
 
 .switch {
     cursor: pointer;
-    background-color: transparent;
+    background-color: map-get($colores, transparente);
     display: inline-block;
     position: fixed;
     z-index: 3;
@@ -254,7 +269,7 @@ form {
     justify-content: space-around;
     width: 60px;
     height: 34px;
-    background-color: #ccc;
+    background-color: map-get($colores, grisecito);
     border-radius: 20px;
     transition: $transicion;
 }
@@ -266,7 +281,7 @@ form {
     top: 3px;
     width: 28px;
     height: 28px;
-    background-color: #fff;
+    background-color: map-get($colores, blanco);
     border-radius: 20px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
     transition: $transicion;
@@ -277,8 +292,7 @@ form {
 }
 
 .switch input:checked+i {
-    background-color: #4BD763;
-    /* background-color: #515151;*/
+    background-color: map-get($colores, verde-ios);
 }
 
 .switch input:checked+i::after {
@@ -304,23 +318,23 @@ form {
     .image-nosotros {
         width: 90%;
         border-radius: 1vh;
-        box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: map-get($colores, sombrita);
     }
 }
 
-@media(min-width:481px) {
+@media (min-width:480px) {
     .image-nosotros {
-        width: 90%;
+        width: 55vh;
         border-radius: 1vh;
-        box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: map-get($colores, sombrita);
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width:640px) {
     .image-nosotros {
-        width: 80vh;
+        width: 60vh;
         border-radius: 1vh;
-        box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: map-get($colores, sombrita);
     }
 }
 
@@ -333,7 +347,7 @@ form {
 .gif-gracias {
     width: 20%;
     border-radius: 5px;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: map-get($colores, sombrita);
 }
 
 .contenedor-back-site {
