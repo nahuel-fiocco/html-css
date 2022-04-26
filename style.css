@@ -176,14 +176,14 @@ form {
   .dark-mode .img-foot {
     color: white;
     transition: 200ms; }
+  .dark-mode:hover {
+    color: white;
+    text-decoration: underline;
+    transition: 200ms; }
 
 .dark-mode .imgfoot {
   color: white;
   transition: 200ms; }
-  .dark-mode .imgfoot:hover {
-    color: white;
-    text-decoration: underline;
-    transition: 200ms; }
 
 /* BOTON DARK MODE */
 .switch {
@@ -280,4 +280,7 @@ form {
   padding: 10px; }
 
 .imagenes {
-  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3); }
+  transition: 200ms; }
+  .imagenes:hover {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: 200ms; }

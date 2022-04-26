@@ -223,16 +223,16 @@ form {
         color: white;
         transition: $transicion;
     }
-}
-
-.dark-mode .imgfoot {
-    color: white;
-    transition: $transicion;
     &:hover {
         color: white;
         text-decoration: underline;
         transition: $transicion;
     }
+}
+
+.dark-mode .imgfoot {
+    color: white;
+    transition: $transicion;
 }
 
 
@@ -352,5 +352,9 @@ form {
 }
 
 .imagenes {
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: $transicion;
+    &:hover {
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+        transition: $transicion;
+    }
 }
