@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   transition: 200ms;
   overflow: auto;
   z-index: 0; }
@@ -70,25 +70,27 @@ p {
   overflow: hidden;
   transition: 200ms; }
   .link:hover .imagenes {
-    transform: scale(1.03); }
+    transform: scale(1.05); }
   .link:hover .imgfoot {
-    text-decoration: underline; }
-
-.imgfoot {
-  position: relative;
-  bottom: 50px;
-  left: 10px;
-  width: auto;
-  color: white;
-  background-color: rgba(20, 20, 20, 0.7);
-  backdrop-filter: blur(2px);
-  border-radius: 5px;
-  padding: 5px; }
+    text-decoration: underline;
+    transform: translate(0px, 5px);
+    transition: 200ms; }
 
 .centrador {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.imgfoot {
+  position: relative;
+  bottom: 50px;
+  width: auto;
+  color: white;
+  background-color: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+  padding: 5px;
+  transition: 200ms; }
 
 /* FOOTER */
 footer {
@@ -134,11 +136,14 @@ form {
   outline: none; }
 
 .sumbit {
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
   width: 40px;
   height: 40px;
   outline: none; }
+
+.send-icon {
+  width: 20px; }
 
 .contenedor-instagram {
   display: flex;
@@ -164,9 +169,10 @@ form {
   font-size: 14px; }
 
 #cohetito-legal {
-  transition: all 500ms; }
+  transition: 200ms;
+  touch-action: auto; }
   #cohetito-legal:hover {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
     cursor: default; }
 
 /* DARK MODE */
@@ -196,7 +202,7 @@ form {
   display: inline-block;
   position: fixed;
   z-index: 3;
-  right: 70px;
+  right: 80px;
   bottom: 80px;
   width: 1px;
   height: 1px;
@@ -273,7 +279,7 @@ form {
   border-radius: 5px;
   box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3); }
 
-.contenedor-back-site {
+.contenedor-back-to-site {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -287,3 +293,7 @@ form {
 .imagenes {
   transition: 200ms;
   overflow: hidden; }
+
+.link {
+  height: 520px;
+  margin-bottom: 30px; }

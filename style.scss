@@ -24,7 +24,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    border: none;
+    border: 0;
     transition: $transicion;
     overflow: auto;
     z-index: 0;
@@ -96,30 +96,32 @@ p {
     transition: $transicion;
     &:hover {
         .imagenes {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
         .imgfoot {
             text-decoration: underline;
+            transform: translate(0px, 5px);
+            transition: $transicion;
         }
     }
-}
-
-.imgfoot {
-    position: relative;
-    bottom: 50px;
-    left: 10px;
-    width: auto;
-    color: white;
-    background-color: map-get($colores, gris-oscurito);
-    backdrop-filter: blur(2px);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 .centrador {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imgfoot {
+    position: relative;
+    bottom: 50px;
+    width: auto;
+    color: white;
+    background-color: map-get($colores, gris-oscurito);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 5px;
+    transition: $transicion;
 }
 
 
@@ -174,11 +176,15 @@ form {
 }
 
 .sumbit {
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: map-get($colores, blanco);
     width: 40px;
     height: 40px;
     outline: none;
+}
+
+.send-icon {
+    width: 20px;
 }
 
 .contenedor-instagram {
@@ -210,9 +216,10 @@ form {
 }
 
 #cohetito-legal {
-    transition: all 500ms;
+    transition: $transicion;
+    touch-action: auto;
     &:hover {
-        transform: rotate(720deg);
+        transform: rotate(360deg);
         cursor: default;
     }
 }
@@ -255,7 +262,7 @@ form {
     display: inline-block;
     position: fixed;
     z-index: 3;
-    right: 70px;
+    right: 80px;
     bottom: 80px;
     width: 1px;
     height: 1px;
@@ -350,7 +357,7 @@ form {
     box-shadow: map-get($colores, sombrita);
 }
 
-.contenedor-back-site {
+.contenedor-back-to-site {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -366,4 +373,9 @@ form {
 .imagenes {
     transition: $transicion;
     overflow: hidden;
+}
+
+.link {
+    height: 520px;
+    margin-bottom: 30px;
 }
