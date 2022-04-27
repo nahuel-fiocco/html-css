@@ -92,15 +92,11 @@ p {
     position: relative;
     color: map-get($colores, negro);
     text-decoration: none;
-    overflow: hidden;
     transition: $transicion;
     &:hover {
-        .imagenes {
-            transform: scale(1.05);
-        }
         .imgfoot {
             text-decoration: underline;
-            transform: translate(0px, 5px);
+            transform: translate(0px, -10px);
             transition: $transicion;
         }
     }
@@ -367,15 +363,4 @@ form {
 .col-md-4 {
     display: flex;
     justify-content: center;
-    overflow: hidden;
-}
-
-.imagenes {
-    transition: $transicion;
-    overflow: hidden;
-}
-
-.link {
-    height: 520px;
-    margin-bottom: 30px;
 }
