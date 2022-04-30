@@ -30,7 +30,7 @@ body {
     flex-direction: column; }
   .contenedor-logo {
     position: relative;
-    top: 5px; } }
+    top: 10px; } }
 
 /* NAVBAR DESKTOP */
 @media (min-width: 1100px) {
