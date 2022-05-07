@@ -311,3 +311,27 @@ form {
 .col-md-4 {
   display: flex;
   justify-content: center; }
+
+.contenedor-general {
+  display: flex;
+  justify-content: center; }
+
+.contenedor-links {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+
+.contenedor-resena {
+  padding: 20px; }
+
+.img-resena {
+  width: 30%;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3); }
+
+.maps-logo {
+  width: 16px; }
+
+.instagram-logo {
+  width: 20px; }

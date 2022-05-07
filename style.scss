@@ -403,3 +403,33 @@ form {
     display: flex;
     justify-content: center;
 }
+
+.contenedor-general {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.contenedor-resena {
+    padding: 20px;
+}
+
+.img-resena {
+    width: 30%;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: map-get($colores, sombrita);
+}
+
+.maps-logo {
+    width: 16px;
+}
+
+.instagram-logo {
+    width: 20px;
+}
