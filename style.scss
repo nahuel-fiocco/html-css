@@ -405,25 +405,20 @@ form {
 }
 
 .contenedor-general {
-    display: flex;
-    justify-content: center;
+    background-color: red;
 }
+
+.contenedor-resena {
+    background-color: pink;
+}
+
+.img-resena {}
 
 .contenedor-links {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-}
-
-.contenedor-resena {
-    padding: 20px;
-}
-
-.img-resena {
-    width: 30%;
-    margin: 30px;
-    border-radius: 10px;
-    box-shadow: map-get($colores, sombrita);
+    gap: 30px;
+    background-color: #ccc;
 }
 
 .maps-logo {
@@ -432,4 +427,14 @@ form {
 
 .instagram-logo {
     width: 20px;
+}
+
+.web-logo {
+    width: 22px;
+}
+
+.subtitulo {
+    font-weight: 350;
+    font-style: italic;
+    text-align: center;
 }
