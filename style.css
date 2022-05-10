@@ -25,7 +25,7 @@ body {
 /* NAVBAR MOBILE */
 @media (max-width: 1100px) {
   .main {
-    margin-top: 90px;
+    margin-top: 100px;
   }
   .contenedor-navbar {
     display: -webkit-box;
@@ -51,7 +51,7 @@ body {
 /* NAVBAR DESKTOP */
 @media (min-width: 1100px) {
   .main {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .contenedor-navbar {
     display: -webkit-box;
@@ -255,6 +255,15 @@ form {
   width: 40px;
   height: 40px;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .send-icon {
@@ -309,6 +318,20 @@ form {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   cursor: default;
+}
+
+.back-to-home {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.back-to-home:hover {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: black;
+  cursor: pointer;
 }
 
 /* DARK MODE */
@@ -485,14 +508,6 @@ form {
           justify-content: center;
 }
 
-.contenedor-general {
-  background-color: red;
-}
-
-.contenedor-resena {
-  background-color: pink;
-}
-
 .contenedor-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,25 +515,97 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
-  background-color: #ccc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 
 .maps-logo {
   width: 16px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.maps-logo:hover {
+  -webkit-transform: translate(0px, -6px);
+          transform: translate(0px, -6px);
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .instagram-logo {
-  width: 20px;
+  width: 24px;
+  border-radius: 7px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.instagram-logo:hover {
+  -webkit-transform: translate(0px, -6px);
+          transform: translate(0px, -6px);
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .web-logo {
-  width: 22px;
+  width: 24px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.web-logo:hover {
+  -webkit-transform: translate(0px, -6px);
+          transform: translate(0px, -6px);
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .subtitulo {
   font-weight: 350;
   font-style: italic;
   text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor-resena {
+  margin: 30px 0px 20px 0px;
+}
+
+.texto-resena {
+  font-size: 18px;
+}
+
+.contenedor-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 50px;
+}
+
+.carousel {
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
