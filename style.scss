@@ -421,8 +421,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 35px;
+    margin-top: 20px;
 }
 
 .maps-logo {
@@ -474,25 +474,53 @@ img {
 }
 
 .contenedor-puntaje {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .texto-puntaje {
     font-size: 22px;
+    width: fit-content;
 }
 
-.contenedor-texto {
+.contenedor-texto-izq {
+    display: inline-block;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 50px;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 600;
+}
+
+.contenedor-texto-der {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 50px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .carousel {
     border-radius: 10px;
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 }
 
 img {
     border-radius: 10px;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-resena-gral {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
 }

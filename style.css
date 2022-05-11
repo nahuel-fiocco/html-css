@@ -517,8 +517,8 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 35px;
+  margin-top: 20px;
 }
 
 .maps-logo {
@@ -582,14 +582,24 @@ img {
 }
 
 .contenedor-puntaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
 }
 
 .texto-puntaje {
   font-size: 22px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.contenedor-texto {
+.contenedor-texto-izq {
+  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,15 +611,63 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   line-height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 600;
+}
+
+.contenedor-texto-der {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  line-height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .carousel {
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
 img {
   border-radius: 10px;
+}
+
+.col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedor-resena-gral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
