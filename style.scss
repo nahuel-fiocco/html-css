@@ -101,6 +101,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 .contenedor-logo {
@@ -279,14 +280,8 @@ form {
     background-color: map-get($colores, negro);
     color: map-get($colores, blanco);
     transition: $transicion;
-    .gif-gracias {
+    img {
         opacity: 0.9;
-    }
-    .img-fluid {
-        opacity: 0.9;
-    }
-    .image-nosotros {
-        opacity: 0.8;
     }
     a.back-to-home {
         color: map-get($colores, blanco);
@@ -306,59 +301,50 @@ form {
 
 .switch {
     cursor: pointer;
-    background-color: map-get($colores, transparente);
-    display: inline-block;
+    background-color: #ccc;
+    border-radius: 20px;
     position: fixed;
     z-index: 3;
-    right: 80px;
+    right: 50px;
     bottom: 80px;
-    width: 1px;
-    height: 1px;
-    padding: 0px;
-    transition: $transicion;
-}
-
-.switch i {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
     width: 60px;
     height: 34px;
-    background-color: map-get($colores, grisecito);
-    border-radius: 20px;
     transition: $transicion;
-}
-
-.switch i::after {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 3px;
-    width: 28px;
-    height: 28px;
-    background-color: map-get($colores, blanco);
-    border-radius: 20px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
-    transition: $transicion;
-}
-
-.switch input {
-    display: none;
-}
-
-.switch input:checked+i {
-    background-color: map-get($colores, verde-ios);
-}
-
-.switch input:checked+i::after {
-    transform: translate(24px);
-}
-
-.icono-switch {
-    margin-top: 6px;
-    padding: 1px;
-    width: 22px;
-    height: 22px;
+    outline: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+    &::after {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 29px;
+        position: absolute;
+        background: white;
+        top: 2px;
+        left: 2px;
+        right: unset;
+        border-radius: 20px;
+        border: 1px solid rgb(171, 171, 171);
+        transition: $transicion;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+        background-color: #4BD763;
+        transition: $transicion;
+        &::after {
+            /* right: 2px;
+            left: unset; */
+            transform: translate(26px, 0);
+            transition: $transicion;
+        }
+    }
+    span {
+        color: black;
+        background: none;
+        transition: $transicion;
+    }
 }
 
 
