@@ -87,7 +87,7 @@ p {
 
 .texto-inicial {
   text-align: center;
-  font-size: 2vh;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -132,7 +132,7 @@ p {
 }
 
 .nav-link {
-  font-size: 2vh;
+  font-size: 15px;
 }
 
 /* LINKS */
