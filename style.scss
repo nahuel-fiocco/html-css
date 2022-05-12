@@ -137,7 +137,6 @@ p {
     transition: $transicion;
     &:hover {
         .imgfoot {
-            text-decoration: underline;
             transform: translate(0px, -10px);
             transition: $transicion;
         }
