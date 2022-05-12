@@ -371,7 +371,7 @@ form {
   position: fixed;
   z-index: 3;
   right: 30px;
-  bottom: 80px;
+  bottom: 30px;
   width: 60px;
   height: 34px;
   -webkit-transition: 200ms;
