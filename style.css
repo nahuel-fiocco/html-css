@@ -26,6 +26,7 @@ body {
 @media (max-width: 1100px) {
   .main {
     margin-top: 100px;
+    min-height: 63.1vh;
   }
   .contenedor-navbar {
     display: -webkit-box;
@@ -52,6 +53,7 @@ body {
 @media (min-width: 1100px) {
   .main {
     margin-top: 60px;
+    min-height: 72.7vh;
   }
   .contenedor-navbar {
     display: -webkit-box;
