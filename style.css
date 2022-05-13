@@ -20,13 +20,20 @@ body {
   transition: 200ms;
   overflow: auto;
   z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* NAVBAR MOBILE */
 @media (max-width: 1100px) {
   .main {
     margin-top: 100px;
-    min-height: 63.1vh;
+    /* min-height: 63.1vh; */
   }
   .contenedor-navbar {
     display: -webkit-box;
@@ -53,7 +60,7 @@ body {
 @media (min-width: 1100px) {
   .main {
     margin-top: 60px;
-    min-height: 72.7vh;
+    /* min-height: 72.7vh; */
   }
   .contenedor-navbar {
     display: -webkit-box;
@@ -191,17 +198,14 @@ footer {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: relative;
-  bottom: 0px;
-  width: 100%;
   padding: 1px;
   font-size: 14px;
   -webkit-transition: 200ms;
   transition: 200ms;
-  margin-top: 2vh;
-  z-index: 1;
 }
 
-.footer-sent-data {
+.footer-sent-data,
+.footer-nosotros {
   position: absolute;
   width: 100%;
   bottom: 0px;
@@ -477,7 +481,7 @@ form {
 }
 
 .gif-gracias {
-  width: 20%;
+  width: 325px;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
